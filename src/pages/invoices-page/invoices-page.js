@@ -2,20 +2,15 @@ import { Container, SideBar, SiteHeader } from "../../components";
 
 export const InvoicesPage = () => {
   return (
-    <>
-      <div>
-        <header>
-          <Container>
-            <SiteHeader />
-          </Container>
-        </header>
-        <main>
-          <Container>
-
-          <SideBar />
-          </Container>
-        </main>
-      </div>
-    </>
+    <main>
+      <header>
+        <Container>
+          <SiteHeader />
+        </Container>
+      </header>
+      <Container>
+        <SideBar />
+      </Container>
+    </main>
   );
 };

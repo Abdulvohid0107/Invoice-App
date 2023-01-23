@@ -1,8 +1,8 @@
 import { ButtonEl, LinkEl } from "./button.styled";
 
-export const Button = ({ to, className = "", ...props }) => {
+export const Button = ({ to, ...props }) => {
   if (to) {
-    return <LinkEl to={to} className={className + " button"} {...props} />;
+    return <LinkEl to={to} {...props} />;
   }
-  return <ButtonEl {...props} />;
+  return <ButtonEl {...props}  />;
 };

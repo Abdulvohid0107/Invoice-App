@@ -1,16 +1,16 @@
-import { ImgWr, SideBarWr, UserImgWr } from "./side-bar.styled";
+import { ImgWrapper, LogoImg, SideBarWrapper, UserImg, UserImgWrapper } from "./side-bar.styled";
 import Person from "../../assets/images/person.png"
-import Shape from "../../assets/images/shape.svg"
+import logo from "../../assets/images/logo.svg"
 
 export const SideBar = () => {
   return (
-    <SideBarWr>
-      <ImgWr>
-        <img src={Shape} alt="shape" />
-      </ImgWr>
-      <UserImgWr>
-        <img src={Person} alt="Person" />
-      </UserImgWr>
-    </SideBarWr>
+    <SideBarWrapper>
+      <ImgWrapper>
+        <LogoImg src={logo} alt="logo" />
+      </ImgWrapper>
+      <UserImgWrapper>
+        <UserImg src={Person} alt="Person" />
+      </UserImgWrapper>
+    </SideBarWrapper>
   );
 };
